@@ -60,8 +60,7 @@ Why do we need it?
    - after entering it will give you a command to use, Copy it
 3. Enter the copied command into gitbash and enter
 4. Will not recognise as it is the first time it has been created so type yes
-  
-![img_6.png](img_6.png)
+
 6. Successfully logged in
 
 ### 4. Deleting VM
