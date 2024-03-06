@@ -2,12 +2,14 @@
 ### *'Without the need for physical infrastructure'*
 ![img.png](img.png)
 
-####  - Cloud Computing is a way to help businesses/ individuals reduce physical hardware by using services that are not theirs
+####   Cloud Computing is a way to help businesses/ individuals reduce physical hardware by using services that are not theirs
 - Resources that are used through the internet without the need to own any of it
 - the hardware does not need to managed by the business, so you have a big pool of resources without using your own electricity of hardware
 - Diagram:
   - Every hardware device can be used through the cloud
 
+### Quick History
+- 
 
 ### What can you do with Cloud Computing
 1. **Data storage and Management**
@@ -35,8 +37,16 @@
      - CONS: Higher costs and need to manage the infrastructure
 3. **HYBRID**
    - Combined pub and priv
+   - Leverage both flexibility and cost-eff of public but security of private with sensitive data
+   - Migrating takes time so keeping a hybrid approach help to slowly migrate the process
 4. **MULTI-CLOUD**
-   - using multiple public clouds from different providers simultaneously
+   - Using multiple public clouds from different providers simultaneously
+   - Reduce redundancy and improves fault tolerance but managing multiple can become difficult
+
+### SERVICE MODEL
+1. **Infrastructure as a Service (IaaS)**: IaaS lets users install their own operating systems and apps by providing the servers, storage, and networking that make up the core infrastructure. In essence, they rent the hardware and handle the software.
+2. **Platform as a Service (PaaS)**: PaaS provides an application development, deployment, and management platform. In addition to extra tools and services like databases, development tools, and middleware, it also comprises the infrastructure (such as IaaS).
+3. **Software as a Service (SaaS)**: SaaS offers fully functional online applications. Users just subscribe to and utilise the product directly; they are not involved in managing any platform or infrastructure components
 
 ### ADVANTAGES
 1. Cost-effective (PAYG)
@@ -102,10 +112,6 @@
 
 ### How does Cloud Computing work as a business model?
 **As it is dependent on demand and what you need, Cloud adops the PAYG model**
-##### SERVICE MODEL
-1. **Infrastructure as a Service (IaaS)**: IaaS lets users install their own operating systems and apps by providing the servers, storage, and networking that make up the core infrastructure. In essence, they rent the hardware and handle the software.
-2. **Platform as a Service (PaaS)**: PaaS provides an application development, deployment, and management platform. In addition to extra tools and services like databases, development tools, and middleware, it also comprises the infrastructure (such as IaaS).
-3. **Software as a Service (SaaS)**: SaaS offers fully functional online applications. Users just subscribe to and utilise the product directly; they are not involved in managing any platform or infrastructure components
 
 ### What sorts of things do you usually need to pay for when using the cloud?
 1. Compute resources:
