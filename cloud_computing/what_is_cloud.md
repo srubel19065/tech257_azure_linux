@@ -1,6 +1,6 @@
 # What is Cloud Computing
 ### *'Without the need for physical infrastructure'*
-![img.png](img.png)
+![img.png](../img/img.png)
 
 ####   Cloud Computing is a way to help businesses/ individuals reduce physical hardware by using services that are not theirs
 - Resources that are used through the internet without the need to own any of it
@@ -25,6 +25,11 @@
    - High performance computing
 4. Collab/Comms
 
+#### What to ask myself when to know if something is Cloud?
+1. Is the service centrally managed
+2. Does it work through what is in demand and can it scale on demand?
+3. Is it physically present and somewhere else?
+4. Is this thing accessible over the internet
 
 ### 4 TYPES OF CLOUD
 1. **PUBLIC**
@@ -48,33 +53,38 @@
 2. **Platform as a Service (PaaS)**: PaaS provides an application development, deployment, and management platform. In addition to extra tools and services like databases, development tools, and middleware, it also comprises the infrastructure (such as IaaS).
 3. **Software as a Service (SaaS)**: SaaS offers fully functional online applications. Users just subscribe to and utilise the product directly; they are not involved in managing any platform or infrastructure components
 
+**Depends on the level of control you require, the less you need the more cloud services needed**
+- This level of control vs Cloud level correlates from left to right on the service models list
 ### ADVANTAGES
-1. Cost-effective (PAYG): eliminates need for upfront cost (although still a way of paying to discount)
+1. **Cost-effective (PAYG):** eliminates need for upfront cost (although still a way of paying to discount)
    - pay for resources you use
-2. Scalability: can scale up and down to meet demands 
-3. Increased Accesibility: can be accessed anywhere with internet
-4. Improved Collab: Cloud tools and platforms allowing teams to communicate better
-5. Disaster Recovery: backups and DR solutions
+2. **Scalability:** can scale up and down to meet demands 
+3. **Increased Accessibility:** can be accessed anywhere with internet
+4. **Improved Collab:** Cloud tools and platforms allowing teams to communicate better
+5. **Disaster Recovery:** backups and DR solutions
+6. **SLA**
 
 ### DISADVANTAGES
-1. Security:
+1. **Security:**
    - Raises concerns for some users as they dont have control over it
-2. Internet dependency 
+2. **Internet dependency** 
    - Need a reliable connection, outages can disrupt access and usage
-3. Limited control
+3. **Limited control**
    - As the cloud provides everything for you, may be less control with underlying infrastructure, depends on company
 
 ### OpEx
-- The ongoing costs to run the business on a day2day basis
+The ongoing costs to run the business on a day to day basis
   - keeping revenue and operational eg rent
 
 ### CapEx
-- Large one time expenses with getting or upgrading physical assets eg building
+Large one time expenses with getting or upgrading physical assets 
+- eg building, lands
 
-![img_1.png](img_1.png)
+![img_1.png](../img/img_1.png)
+**If the Cloud is adopted, the expenditure will somewhat be reduced**
 
 ### Marketshare
-![img_2.png](img_2.png)
+![img_2.png](../img/img_2.png)
 
 ### 3 largest Cloud Providers
 1. **AWS**
@@ -86,6 +96,7 @@
 2. **Azure**
    - Microsoft products
      - Azure integrates with a bunch of Microsoft products
+     - Reason for it rising - integration
        - Active Directory
    - Hybrid Cloud Capabilities
 3. **GCP**
@@ -108,14 +119,18 @@
 ### 3 Case Studies of Businesses using Cloud
 1. **DropBox**
    - **Why?**: They were struggling to keep on pace with demand with their in premise infrastructure
-   - **Solution**: Mirated to AWS in 2010 giving them scalable storage and more processing power
+   - **Solution**: Migrated to AWS in 2010 giving them scalable storage and more processing power
 2. **Netflix**
    - **Why?**: Initially relied on Content delivery networks and pyhsical servers - not good for Netflixs demands
    - **Solution**: Migrated entire infrastructure to AWS, 2012. 
      - Increased scalability to reach more global audience
 
 ### How does Cloud Computing work as a business model?
-**As it is dependent on demand and what you need, Cloud adops the PAYG model**
+As it is dependent on demand and what you need, Cloud adopts the PAYG model
+1. **Service-Orientated**
+2. **Subscription-Based Pricing**
+3. **Scalability and Elasticity**
+4. **Shared Resources**
 
 ### What sorts of things do you usually need to pay for when using the cloud?
 1. Compute resources:
