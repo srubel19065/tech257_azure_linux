@@ -49,16 +49,20 @@
 3. **Software as a Service (SaaS)**: SaaS offers fully functional online applications. Users just subscribe to and utilise the product directly; they are not involved in managing any platform or infrastructure components
 
 ### ADVANTAGES
-1. Cost-effective (PAYG)
-2. Scalability: change in demand 
+1. Cost-effective (PAYG): eliminates need for upfront cost (although still a way of paying to discount)
+   - pay for resources you use
+2. Scalability: can scale up and down to meet demands 
 3. Increased Accesibility: can be accessed anywhere with internet
-4. Improved Collab
+4. Improved Collab: Cloud tools and platforms allowing teams to communicate better
 5. Disaster Recovery: backups and DR solutions
 
 ### DISADVANTAGES
-1. Security
+1. Security:
+   - Raises concerns for some users as they dont have control over it
 2. Internet dependency 
+   - Need a reliable connection, outages can disrupt access and usage
 3. Limited control
+   - As the cloud provides everything for you, may be less control with underlying infrastructure, depends on company
 
 ### OpEx
 - The ongoing costs to run the business on a day2day basis
