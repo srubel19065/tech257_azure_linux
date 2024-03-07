@@ -9,7 +9,7 @@
 - Bash = *Bourne Again Shell*
 
 
-### Basic Command
+# Commands
 - `ls`
   - whats inside 
 - `ls -a`
@@ -42,4 +42,37 @@
   - empty file
 - `nano <file>`
   - file editor 
-- 
+
+
+## Scripting 
+Can create a script using the Nano editor command
+
+### Example: Provisioning NginX Script
+- This is a script - helps to automate tasks.
+- Create a file and use Nano to edit the file.
+
+```
+#!/bin/bash
+
+# update
+sudo apt update -y
+
+# upgrade
+# issue - current command asked for user input
+sudo apt upgrade -y
+
+# install nginx
+sudo apt install nginx -y
+
+# restart nginx
+sudo systemctl restart nginx
+
+# enable nginx
+sudo systemctl enable nginx
+```
+- To execute, use `chmod +x` to add execute permissions and then run the script using `./` in front of script name
+
+## Variables
+### Env Variables 
+
+

@@ -1,4 +1,4 @@
-# Managing File Ownership
+# File Ownership
 
 ## Task 2.8a: Linux - Research managing file ownership
 ### 1. Why is managing file ownership important?
