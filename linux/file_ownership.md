@@ -44,8 +44,8 @@
 - Can be specific by giving filename after
 
 ### 3. What permissions are set when a user creates a file or directory? Who does file or directory belong to?
-- Owner: Read, Write, and Execute (rw) --> The creator gains ownership
-- Group: Read and Execute (r)
+- Owner: Read, Write (rw) --> The creator gains ownership
+- Group: Read (r)
 - Others: None 
 
 ### 4. Why does the owner, by default, not receive X permissions when they create a file?
