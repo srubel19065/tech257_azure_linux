@@ -1,15 +1,21 @@
 # Linux
 
+- [Linux](#linux)
+  - [What is it](#what-is-it)
+  - [Commands](#commands)
+  - [Scripting](#scripting)
+    - [Example: Provisioning NginX Script](#example-provisioning-nginx-script)
+  - [Variables](#variables)
+    - [Env Variables](#env-variables)
+    - [Making the env variable persistant](#making-the-env-variable-persistant)
 
-
-
-
+## What is it
 - Operating System
 - On Windows, its a tiny piece that interprets commands
 - Bash = *Bourne Again Shell*
 
 
-# Commands
+## Commands
 - `ls`
   - whats inside 
 - `ls -a`
@@ -74,5 +80,16 @@ sudo systemctl enable nginx
 
 ## Variables
 ### Env Variables 
+Variables stored by the Operating System in memory
+- `printenv` = prints all env variables on the system
+- `printenv USER` = prints user name
+ 1. Variables = `MYNAME=rubel` - this is just a variable, assigned a value to something but isnt an env
+ 2. To make env use `export ENVNAME=...` 
+   - This export term makes the variable env
 
-
+### Making the env variable persistant
+1.  When you make an env, if they arent persistant then they will be lost every time the VM is closed
+2.  Go to the .bashrc file - purpose is to be read by bash and interact with it thats why env are stored here
+3.  `nano .bashrc` = scroll to bottom and create your env
+4.  exit and soruce(reload)
+5.  env should become persistant

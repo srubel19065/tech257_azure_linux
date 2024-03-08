@@ -1,4 +1,15 @@
 # Virtual Machine
+- [Virtual Machine](#virtual-machine)
+    - [What is it](#what-is-it)
+    - [Logging into Azure](#logging-into-azure)
+  - [How to Create A VM](#how-to-create-a-vm)
+    - [1. Creating SSH key and Storing on Azure](#1-creating-ssh-key-and-storing-on-azure)
+    - [2. Creating the VM](#2-creating-the-vm)
+    - [3. Connecting to VM](#3-connecting-to-vm)
+    - [4. Deleting VM](#4-deleting-vm)
+    - [5. Stopping VM](#5-stopping-vm)
+
+### What is it
 **'A Computer inside a Computer**
 - Virtualized server that doesn't need a physical presence
 - Acts as a complete comp system with its own CPU, memory, storage, OS.
