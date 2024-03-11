@@ -110,7 +110,7 @@ The owner of that file and have the Write permission
 ### 3. Give examples of some different ways/syntaxes to set permissions on a new file (named testfile.txt) to:
 a. Set User to read, Group to read + write + execute, and Other to read and write only:
 - ```chmod u=r,g=rwx,o=rw testfile.txt```
-- ```chmod 764 testfile.txt```
+- ```chmod 476 testfile.txt```
 
 b. Add execute permissions (to all entities)
 - ```chmod u=x,g=x,o=x testfile.txt```
