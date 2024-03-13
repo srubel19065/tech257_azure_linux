@@ -8,10 +8,30 @@ Automating using user data is the next level up from scripting. It allows the pr
 3. After creation paste the iP into browser and wait for the process (should take a few minutes)
 
 ## How to deploy using Image and bit of User Data
-1. 
+1. Using the User Data VM created, we need to create an image using it
+2.  `sudo waagent -deprovision+user` - will wipe everything to root level
+3. exit
+4. `az login`
+5. `az vm deallocate --resource-group <yourResourceGroup> --name <yourVMName>` - will stop the VM
+6. `az vm generalize --resource-group <yourResourceGroup> --name <yourVMName>` - take generalised configurations and apply it
+7. Go back to Azure to your VM, it should be stopped, click `capture` - creates an image
+8. With this new image, create a VM - this will be what loads the app
+9. Config with usual settings
+10. In the Advanced tab, in the `user data` field, enter a bit of bash script which will assist in the running of the app
+11. This is the script that needs to be entered 
+```
+#!bin/bash
+
+cd /tech257_sparta_app/app
+
+pm2 stop app.js
+
+pm2 start app.js
+```
 
 
 ## Updated Script
+
    1. `sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y` - This command makes sure all upgrades including kernel are done without user intervention
    2. `cd /` - cd into the root folder before cloning
 ```
