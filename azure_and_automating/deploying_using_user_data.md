@@ -78,3 +78,7 @@ pm2 stop app.js
 # start pm2 
 pm2 start app.js
 ```
+
+
+## Blockers
+1. When creating image with user data, the user data script was missing the shebang and that caused the app to not work
