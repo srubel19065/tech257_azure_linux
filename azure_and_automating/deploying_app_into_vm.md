@@ -66,8 +66,11 @@ npm install
 # installing pm2 
 sudo npm install pm2@latest -g
 
-# start pm2 but restart everytime its deployed 
-pm2 restart app.js
+# stop pm2 before rerunning
+pm2 stop app.js
+
+# start pm2 
+pm2 start app.js
 ```
 
 ### Reverse Proxy

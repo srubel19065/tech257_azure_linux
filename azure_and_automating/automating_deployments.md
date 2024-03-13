@@ -11,5 +11,7 @@
    - it only needs to run once and then wont need to be ran again
    - the app folder needs to be in the root
 4. IMAGE
+   - An image is a snapshot of the operation system, apps, software used to make VMs
+   - As you create and config with how you want it, making VMs can be easy and repeatable
 
-![Alt text](../../../Sparta/automation-processes.jpeg)
+![Process of Automation](automation-processes.jpeg)
