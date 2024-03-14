@@ -30,7 +30,7 @@ pm2 start app.js
 ```
 
 
-## Updated Script
+## Updated Script for User Data
 
    1. `sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y` - This command makes sure all upgrades including kernel are done without user intervention
    2. `cd /` - cd into the root folder before cloning
@@ -56,9 +56,6 @@ curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - &&\
 
 # installl node.js
 sudo apt-get install -y nodejs
-
-# going to root user
-cd /
 
 # Retrieving the app folder from the git repo
 git clone https://github.com/srubel19065/tech257_sparta_app.git

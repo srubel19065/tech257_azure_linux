@@ -5,7 +5,7 @@
     - [Copying App Folder into VM](#copying-app-folder-into-vm)
     - [Using Github](#using-github)
     - [Script for Deploying the app](#script-for-deploying-the-app)
-    - [Reverse Proxy](#reverse-proxy)
+  - [Script for deploying app with connection to database](#script-for-deploying-app-with-connection-to-database)
 
 
 ## Create new VM
@@ -39,10 +39,11 @@ Follow steps to create new VM but new config:
 
 # update and upgrade
 sudo apt update -y
-sudo apt upgrade -y
+sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
 
 # install nginx
 sudo apt install nginx -y
+sudo sed -i "s|try_files .*;|proxy_pass http://127.0.0.1:3000;|g" /etc/nginx/sites-available/default
 
 # enable nginx and be able to restart everytime
 sudo systemctl restart nginx
@@ -73,4 +74,48 @@ pm2 stop app.js
 pm2 start app.js
 ```
 
-### Reverse Proxy
+## Script for deploying app with connection to database
+```
+#!/bin/bash
+
+# update and upgrade without user intervention
+sudo apt update -y
+sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
+
+# install nginx
+sudo apt install nginx -y
+sudo sed -i "s|try_files .*;|proxy_pass http://127.0.0.1:3000;|g" /etc/nginx/sites-available/default
+
+# enable nginx and be able to restart everytime
+sudo systemctl restart nginx
+sudo systemctl enable nginx
+
+# download node.js
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - &&\
+
+# installl node.js
+sudo apt-get install -y nodejs
+
+cd /
+
+# Retrieving the app folder from the git repo
+git clone https://github.com/srubel19065/tech257_sparta_app.git
+
+# getting into the app folder
+cd tech257_sparta_app/app/
+
+# creating env variable to establish connection through priv ip
+export DB_HOST=mongodb://10.0.3.5:27017/posts
+
+# installing npm
+npm install
+
+# installing pm2 
+sudo npm install pm2@latest -g
+
+# stop pm2 before rerunning
+pm2 stop app.js
+
+# start pm2 
+pm2 start app.js
+```
