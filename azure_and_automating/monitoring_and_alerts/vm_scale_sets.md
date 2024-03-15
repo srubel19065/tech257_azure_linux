@@ -48,7 +48,11 @@ Give the standard Owner and name tag
 ## Created Scale Set
 Once created, you can view what you are provisioning using the load balancer public Ip, this is because the load balancer is what redirects the traffic to each VM when needed. This Ip is also the Ip of the scale set
 
-1. Instances:
+## Instances:
    ![Alt text](image-8.png)
 - The vms created will show its status, if one is unhealthy for the specified time, it will be deleted and the scale set will create a new VM according to how many you limited to
-- 
+
+1. If one is restarted, it comes back unhealthy as it needs to be reimaged (whole user data script needs to be ran again) 
+   - if kept like this after the 10 minutes we specified, the scale set will spin up a new VM.
+![Alt text](image-9.png)
+
