@@ -1,6 +1,6 @@
 # Azure Monitor and Monitoring
 
-![Alt text](<monitoring- best to worst.jpeg>)
+![Alt text](<../images/monitoring- best to worst.jpeg>)
 
 1. This VM with a lot of usage and high demand specifically a high CPU load will eventually fall over with no monitoring involved
 2. This VM has Azure Mointoring at the lowest level which is the use of a dashboard checking different metrics however someone will need to be watching this at all times which will lead to eventually missing something.
@@ -31,3 +31,4 @@ With the dashboard metrics set with CPU as one metric being measured, we can tes
 - From this it timed out at 2349 requests as it couldnt handle it.
 ![Alt text](10000req-1.png)
 ![Alt text](cpu%2510000-1.png)
+

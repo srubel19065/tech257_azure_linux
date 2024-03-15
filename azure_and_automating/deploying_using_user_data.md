@@ -20,7 +20,7 @@ Automating using user data is the next level up from scripting. It allows the pr
 10. In the Advanced tab, in the `user data` field, enter a bit of bash script which will assist in the running of the app
 11. This is the script that needs to be entered 
 ```
-#!bin/bash
+#!/bin/bash
 
 cd /tech257_sparta_app/app
 
